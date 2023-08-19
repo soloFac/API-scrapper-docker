@@ -1,7 +1,7 @@
 {
-  "name": "language-scraper-ts",
+  "name": "language-scraper",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,12 +17,10 @@
     "express": "4.18.2",
     "express-validator": "7.0.1",
     "puppeteer": "21.1.0",
-    "puppeteer-core": "21.1.0",
-    "ts-node-dev": "^2.0.0"
+    "puppeteer-core": "21.1.0"
   },
   "devDependencies": {
     "eslint": "^8.47.0",
-    "eslint-config-standard-with-typescript": "^37.0.0",
     "eslint-plugin-import": "^2.28.0",
     "eslint-plugin-n": "^16.0.1",
     "eslint-plugin-promise": "^6.1.1"
