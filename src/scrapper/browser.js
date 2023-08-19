@@ -17,14 +17,14 @@ const startBrowser = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
         console.log('Opening the browser......');
         browser = yield puppeteer.launch({
-            // headless: 'new',
+            headless: true,
             args: [
                 '--no-sandbox',
                 '--disable-setuid-sandbox',
                 '--single-process',
                 '--no-zygote'
             ],
-            // 'ignoreHTTPSErrors': true,
+            'ignoreHTTPSErrors': true,
             executablePath: process.env.NODE_ENV === 'production'
                 ? process.env.PUPPETEER_EXECUTABLE_PATH
                 : puppeteer.executablePath()
