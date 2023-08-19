@@ -8,4 +8,4 @@ WORKDIR /build
 COPY package*.json ./
 RUN npm ci
 COPY . .
-CMD [ "tsc" ]
+CMD [ "node", "index.js" ]
