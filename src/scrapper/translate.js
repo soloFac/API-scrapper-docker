@@ -29,7 +29,7 @@ const translateScrapperGoogle = (word, src, target) => __awaiter(void 0, void 0,
             console.log('Esta por traducir varios');
             // Si tiene mas de una traducción utiliza la clase .HwtZe
             const classTraducciones = '.HwtZe';
-            yield page.waitForSelector(classTraducciones, { timeout: 2000 });
+            yield page.waitForSelector(classTraducciones);
             const translations = yield page.$$eval(classTraducciones, (spans) => {
                 return spans.map((span) => span.innerText);
             });
